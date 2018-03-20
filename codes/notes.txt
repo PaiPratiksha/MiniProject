@@ -1,0 +1,31 @@
+for running a .py code on the python shell use command  == "run trial.py"
+                            -------------------
+                            |        |        |
+                            | cA(LL) | cH(LH) |
+                            |        |        |
+(cA, (cH, cV, cD))  <--->   -------------------
+                            |        |        |
+                            | cV(HL) | cD(HH) |
+                            |        |        |
+                            -------------------
+
+
+wavelets for images :
+cV = vertical differencing - horizontal lines
+cH = horizontal diff - vertical lines
+cD = diagonal diff		
+
+
+
+-Z => eyes open, healthy volunteer
+-O => eyes closed, healthy volunteer
+-N => hippocampal zone of a patient during the non seizure time
+-F => epileptic zone of a patient during non sseizure
+-S => contains seizure activity, from all the recording sites exhibiting ictal activity
+
+
+
+DATASET:
+https://archive.ics.uci.edu/ml/datasets/Epileptic+Seizure+Recognition
+https://www.physionet.org/pn6/chbmit/
+https://sccn.ucsd.edu/~arno/fam2data/publicly_available_EEG_data.html`

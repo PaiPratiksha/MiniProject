@@ -1,0 +1,91 @@
+t-f Analysis of EEG signals for epileptic seizure
+- time frequency analysis
+
+-two major problems are-- 
+1. interictal event distribution
+2.epileptic seizure anaysis
+
+algos used for spike detection/interical event D
+-wavelet transform
+-ANN
+-independent PCA
+-SVMs
+-data mining
+-template matching
+-topological classification
+
+algos for 2
+-epileptic seizure detection
+-ES prediction
+-automatic focus channel identification
+
+METHODS
+1.Time-frequency analysis
+-STFT and TFD- suffers tradeoff between window length and frequency resolution
+-the TFDs used here are Cohen's class of distribution
+-in cohen's distribution the representation is quadratic
+-there is a kernel?
+
+
+-frequency subbands in eeg tf analysis are 0-2.5, 2.5 -5.5, 5.5-10.5, 10.5-21.5, 21.5-43.5
+-time domain is divided into 3 segments and the frequency into 5. energy of each segment and total energy are the features extracted (3*5+1). the features so extracted are reduced to 3-4 vectors using PCA;
+
+
+Use of ANNs
+-N inputs
+-5XN hidden layers
+-K outputs b/w [0,1]
+-sigmoid units with hyperbolic tangent function
+-other classification schemes are Naive Bayes, decision trees, k-nearest neighbour,logistic regression
+
+Naive bayes = class conditional independence
+k-NN = closeness to neighbours 
+learn about decision trees
+decision trees = ask chandu- original set is divided into finer subsets
+logistic regression
+
+
+Results:
+-the dataset is divided into 5 subsets includes Z O N F S;
+- each subsegment has 100 single channel eeg segments of 23.6 s each
+-Z => eyes open, healthy volunteer
+-O => eyes closed, healthy volunteer
+-N => hippocampal zone of a patient during the non seizure time
+-F => epileptic zone of a patient during non sseizure
+-S => contains seizure activity, from all the recording sites exhibiting ictal activity
+
+3 types of positioning of the electrode
+a => extracranial 
+b => intracranial - depth - implanted symmtrically into the hippocampal formation
+c => intracranial - strip - implanted into the lateral and basal regions of neocortex (part of cerebral cortex)
+
+Z, O => a
+N, F => b
+S => b, c
+
+-data is 12 bit resolution and 173.61 samples/sec
+
+3 steps of classification
+- normal and affected
+- normal, seizure free, seizure
+-normal open, normal closed, seizure in other regions and in the epileptic zone during seizure free time, activity during seizure
+
+- STFT and 12 other TFDs were used giving 39 test cases
+
+sensitivity(i)  = # patterns of class i classified in class i/total # of patterns in class i
+
+selectivity(i) = # patterns of class i identified in class i/total # patterns classified in class i
+
+accuracy = # of correctly classified patterns / total # of patterns
+
+check the percentage accuracy of each of the methods
+
+Discussion:
+percent accuracy 
+use of smoothing windows
+high frequency components above 43.5 hz were not measured
+
+
+i dont get this
+
+

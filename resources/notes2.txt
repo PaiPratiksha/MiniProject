@@ -1,0 +1,72 @@
+7 pages one
+-subbands like delta, theta, alpha , beta, gamma etc
+-parameters are => std deviation, correlation, largest lyapunov exponent
+-classificatiopn techniques => unsupervised k means clustering, linear and quadratic discriminant analysis, radial basis function NN, Levenberg - Marquardt backpropagation NN
+-Two types of analysis => band- specific and mixed band analysis
+-accuracy of 96.7%
+-ictal activity means seizure
+-the stages include => preictal/ interical state and then the ictal state
+-in interictal state => neurons start firing in multiple parts of brain in synchronisation with of each other with epileptogenic focus leading to ictal state
+
+two approaches for seizure detection from eeg analysis 
+-examination of eeg events in interical eeg to find spikes that are precursors to seizures
+-analysis of spatio-temporal evolution of eeg signals to find a governing rule
+
+three groups of eeg dataset:
+-normal eeg
+-interictal eeg
+-ictal eeg
+thus it is modelled as 3 group classification problem 
+
+the paper postulates that eeg represents the effect of superimposition of various processes of the brain
+
+Feature Space design:
+-wavelet-chaos methodology
+-after wavelet transform, find the CD (correlation dimension), LLE (Largest Lyapunov exponent), SD(standard deviation)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SVMs broaden the concept of hyperplane separration to the data that cannot be separated linearly, by mapping the predictors onto a new, higher dimensional space in which they can be separated linearly
+-disadvantage is not of the order of number of samples but order of number of samples
+
+SVMs and PNNs are used as classifiers
+
+

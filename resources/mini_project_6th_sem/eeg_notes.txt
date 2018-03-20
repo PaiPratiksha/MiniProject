@@ -1,0 +1,48 @@
+Previous approach:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+non linear nature of eeg data
+kernel trick and bag-of-the words model
+Gothmans monitor algorithm
+reveal algorithm
+wavelet transform - DWT
+preprocessing of eeg data includes --> entropies, energy distribution, quanttitative statistical variables, autoregressive models and independent component analysis
+types of eeg signals = normal, ictal, interictal
+
+
+Proposed system:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+wavelet transform and mother wavelets 
+resolution of wavelet in time and frequency domain
+multiresolution analysis concept
+4th order daubechies with 4-6 levels of decomposition
+Bag of Words model (BoW) Natural language understanding
+Biomedical time series classification 
+why is SVM model used in case of eeg signals cant some other models be used?
+codebook generation
+the freq range of brain is 0.3 to 30 hz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bullet points:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+precision = (true +) / ((true +) + (false +))
+recall = (true +) / ((true +) + (false -))
+accuracy = ((true +) + (true -)) / (total population= total + and -)
+F1 = 2 * (precision*recall) / (precision+recall)  i.e. the HM of precision and recall
+
+
+
+false +ve is type 1 error
+false -ve is type 2 error
